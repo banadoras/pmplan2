@@ -1,0 +1,75 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.title {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.main {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  border-bottom: solid rgb(75, 75, 75) 1px;
+  padding: 10px;
+  margin: auto;
+}
+
+.main > div {
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    flex-direction: column;
+  }
+  .plan {
+    border-left: none;
+    /* border-top: black solid 1px; */
+    width: auto;
+    flex-grow: 2;
+  }
+  .plan > textarea {
+    height: 20rem;
+  }
+  .accordion {
+    width: auto;
+  }
+}
+
+.blur {
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.alert-modal {
+  /* padding:10px; */
+  position: absolute;
+  top: 33%;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 3rem;
+
+  /* background-color:rgb(231, 231, 231);
+  border-radius: 10px; */
+}
+
+.alert-modal > input {
+  font-size: 100%;
+  padding: 10px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 20rem;
+  background-color: rgb(66, 66, 66);
+  color: white;
+  box-shadow: 2px 2px 10px 1px rgb(179, 179, 179);
+  border: none;
+  outline: none;
+}
