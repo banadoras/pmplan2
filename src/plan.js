@@ -26,14 +26,14 @@ export default function Plan() {
       <h4>Plan</h4>
       {finalPlan === "" ? <p className="no-plan">No plan items</p> : ""}
       {/* <p>{finalPlan === "" ? "No plan items" : ""}</p> */}
-      <textarea ref={ta} value={finalPlan}></textarea>
+      <textarea ref={ta} value={finalPlan} onChange={(e)=>setFinalPlan(e.target.value)}></textarea>
       <h4>Patient Instructions</h4>
       {finalInstructions === "" ? (
         <p className="no-plan">No Instructions items</p>
       ) : (
         ""
       )}
-      <textarea ref={ta2} value={finalInstructions}></textarea>
+      <textarea ref={ta2} value={finalInstructions} onChange={(e)=>setFinalInstructions(e.target.value)}></textarea>
       <div className="buttons">
         <button
           onClick={() => {
