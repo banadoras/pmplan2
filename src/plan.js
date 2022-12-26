@@ -26,14 +26,22 @@ export default function Plan() {
       <h4>Plan</h4>
       {finalPlan === "" ? <p className="no-plan">No plan items</p> : ""}
       {/* <p>{finalPlan === "" ? "No plan items" : ""}</p> */}
-      <textarea ref={ta} value={finalPlan} onChange={(e)=>setFinalPlan(e.target.value)}></textarea>
+      <textarea
+        ref={ta}
+        value={finalPlan}
+        onChange={(e) => setFinalPlan(e.target.value)}
+      ></textarea>
       <h4>Patient Instructions</h4>
       {finalInstructions === "" ? (
         <p className="no-plan">No Instructions items</p>
       ) : (
         ""
       )}
-      <textarea ref={ta2} value={finalInstructions} onChange={(e)=>setFinalInstructions(e.target.value)}></textarea>
+      <textarea
+        ref={ta2}
+        value={finalInstructions}
+        onChange={(e) => setFinalInstructions(e.target.value)}
+      ></textarea>
       <div className="buttons">
         <button
           onClick={() => {
@@ -51,7 +59,7 @@ export default function Plan() {
         >
           Copy Instructions
         </button>
-        <button onClick={() => setList([])}>Reset Plan</button>
+        <button onClick={() => setList([])}>Clear All</button>
       </div>
     </div>
   );
