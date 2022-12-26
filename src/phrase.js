@@ -23,9 +23,13 @@ export default function Phrase({ phrase }) {
       <div className="phrases" style={{ display: collapsed }}>
         {phrase.phrases.map((p, index) => {
           return (
-            <div class="phrase" key={p.id}>
+            <div
+              className="phrase"
+              key={p.id}
+              title={"D: " + p.description + "\nI: " + p.instruction}
+            >
               <label
-                class={
+                className={
                   list.includes(p)
                     ? "phrase-label phrase-label-selected"
                     : "phrase-label"

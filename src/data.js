@@ -30,7 +30,9 @@ const phrases = [
       {
         id: "m0",
         title: "Gabapentin",
-        description: "Titrate Gabapentin gradually as tolerated to 300 mg TID"
+        description: "Titrate Gabapentin gradually as tolerated to 300 mg TID",
+        instruction:
+          "Start Gabapentin 300 mg nightly for one week, if tolerating ok with no side effects, consider increasing to twice daily dosing 300 mg in AM and 300 mg in PM for a week. If still no issues, can increase to three times daily"
       },
       {
         id: "m01",
